@@ -1,0 +1,915 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+/*HEADER //////////////////  */
+:root {
+  --secondary-color-2: #16697a;
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --primary-color: #ffa62b;
+  --secondary-color-1: #ffa62b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.full-body1 {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #fafafa !important;
+  z-index: 30;
+}
+.full-body2 {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #fff;
+}
+.full-body3 {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #f3f3f3;
+}
+.full-body4 {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: var(--secondary-color-2, #16697a);
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-shrink {
+  padding: 10px 0;
+}
+.pages {
+  display: flex;
+  gap: 28px;
+}
+.header h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.pages a {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  transition: color 0.3s linear;
+}
+.pages a:hover {
+  color: #000;
+}
+a {
+  text-decoration: none;
+  /* color: transparent; */
+}
+/* ////////////////////// */
+
+/* HERO  ///////////////// */
+.hero {
+  margin-left: 197px;
+  max-width: 509px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  /* padding-bottom: 185px; */
+}
+.hero h1 {
+  padding-top: 104px;
+  color: var(--text-color, #252b42);
+
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+}
+.hero p {
+  color: var(--second-text-color, #737373);
+
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  max-width: 376px;
+}
+.btn {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 80px;
+}
+.btn1 {
+  display: flex;
+  padding: 10px 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 37px;
+  background: var(--primary-color, #ffa62b);
+  color: #fff;
+  border: 1px solid var(--secondary-color-1, #ffa62b);
+  transition: all 0.2s linear;
+}
+.btn1:hover {
+  border-radius: 37px;
+  border: 1px solid var(--secondary-color-1, #ffa62b);
+  color: var(--secondary-color-1, #ffa62b);
+  background: #fff;
+}
+.btn2 {
+  display: flex;
+  padding: 10px 36px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 37px;
+  border: 1px solid var(--secondary-color-1, #00a0c1);
+  transition: all 0.2s linear;
+}
+.btn2:hover {
+  color: #fff;
+  background: var(--secondary-color-1, #00a0c1);
+  border-radius: 37px;
+  border: 1px solid var(--secondary-color-1, #00a0c1);
+}
+.hero-section {
+  margin-top: 80px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-image: url(../images/cover-bg.png);
+  width: 100%;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  height: 800px;
+  /* padding-bottom: 185px; */
+}
+/* ///////////////////////////// */
+
+/* SECTION CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  z-index: 10;
+  margin-top: -105px;
+}
+.card svg {
+  fill: #00a0c1;
+}
+.card:hover {
+  background: #00a0c1;
+}
+.card:hover svg {
+  fill: #fff;
+}
+.card h2 {
+  color: var(--text-color, #252b42);
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+
+.card p {
+  color: var(--second-text-color, #737373);
+  max-width: 218px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.card:hover p {
+  color: #fff;
+}
+.card:hover h2 {
+  color: #fff;
+}
+.card {
+  margin-top: -105px;
+  background: #fff;
+  padding: 35px 40px;
+  max-width: 328px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  transition: all 0.5s linear;
+}
+/* ///////////////// */
+
+/* ABOUT ///////////////// */
+.about-content {
+  max-width: 490px;
+  margin: 0 auto;
+}
+.about-content h2 {
+  color: var(--text-color, #252b42);
+  padding-top: 192px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+.about-content p {
+  color: var(--second-text-color, #737373);
+  text-align: center;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.about {
+  text-align: center;
+  background: #fafafa;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.about-card {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 230px;
+  transition: all 0.3s linear;
+  background: #fff;
+}
+.about-card h3 {
+  color: var(--text-color, #252b42);
+
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+.about-card p {
+  color: var(--second-text-color, #737373);
+  text-align: center;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.about-card:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.advice-cards {
+  max-width: 1050px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 101px;
+  /* flex-wrap: wrap; */
+}
+.advice-card {
+  height: 321px;
+  background: #fff;
+  width: 232px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s linear;
+}
+.advice-card:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+.advice-card img {
+  height: 138px;
+}
+.advice-text {
+  height: 183px;
+  width: 232px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.advice-text p {
+  width: 177px;
+  color: var(--second-text-color, #737373);
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.advice-text h3 {
+  color: var(--text-color, #252b42);
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+/* ///////////////// */
+
+/* MAIN HEADER ////////////// */
+.img img {
+  height: 442px;
+}
+.main-header {
+  margin: 0 auto;
+  text-align: center;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.main-text {
+  display: flex;
+  gap: 20px;
+}
+.main-text h2 {
+  color: var(--text-color, #252b42);
+
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+.main-text p {
+  color: var(--second-text-color, #737373);
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.main-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 187px; */
+  /* margin-bottom: 187px; */
+}
+.main-content {
+  padding: 100px 0;
+}
+.p-h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.main-header {
+  padding-top: 100px;
+}
+.main-header h1 {
+  color: var(--text-color, #252b42);
+  text-align: center;
+
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+.main-header p {
+  color: var(--second-text-color, #737373);
+  text-align: center;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  max-width: 511px;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.p-h3 h3 {
+  color: var(--text-color, #252b42);
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+.p-h3 p {
+  color: var(--second-text-color, #737373);
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+/* ///////////////// */
+
+/* SVG-INPUT */
+.svg {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 50px 0;
+  align-items: center;
+}
+.svg-input {
+  max-width: 1440px;
+  background-color: #fafafa;
+  padding-bottom: 65px;
+}
+.input {
+  border-radius: 2px;
+  background: var(--secondary-color-2, #16697a);
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input input {
+  outline: none;
+  width: 450px;
+  height: 60px;
+}
+.input input::placeholder {
+  padding: 15px 0;
+  padding-left: 20px;
+  color: var(--second-text-color, #737373);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+.input button {
+  color: var(--light-text-color, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #e6e6e6;
+  background: var(--primary-color, #ffa62b);
+  padding: 15px 22.5px;
+  border: none;
+  position: sticky;
+  top: 30px;
+  right: 200px;
+}
+/* /////////////// */
+
+/* CONTACT */
+.contact {
+  background: #f3f3f3;
+  padding: 80px 0 208px 0;
+}
+.contact-card {
+  background: #fff;
+  width: 328px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+.contact-card:hover {
+  background: var(--dark-background-color, #252b42);
+}
+.contact-card:hover p {
+  color: #fff;
+}
+.contact-card:hover h3 {
+  color: #fff;
+}
+.contact-card button {
+  color: var(--primary-color, #ffa62b);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color, #ffa62b);
+  padding: 10px 20px;
+  background: #fff;
+}
+.contact-card:hover button {
+  border-radius: 5px;
+  border: 1px solid var(--light-text-color, #fff);
+  color: #fff;
+  background: #252b42;
+}
+.contact-card svg {
+  fill: #00a0c1;
+}
+.contact-card:hover svg {
+  fill: #fff;
+}
+.contact-cards {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.contact-card p {
+  color: var(--text-color, #252b42);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.contact-card h3 {
+  color: var(--text-color, #252b42);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+.contact-header {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-header p {
+  padding-top: 10px;
+  max-width: 470px;
+  margin: 0 auto;
+  color: var(--second-text-color, #737373);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.contact-header h2 {
+  color: var(--text-color, #252b42);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+..input h3{
+  color: #FFF;
+
+/* h3 */
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+letter-spacing: 0.1px;
+}
+/* ////////////////////// */
+
+/* INPUT */
+.forms input {
+  display: block;
+  border: 1px solid var(--Gray-5, #e0e0e0);
+  width: 100%;
+  height: 50px;
+  outline: none;
+  background-color: #fafafa;
+}
+.forms input::placeholder {
+  color: var(--Gray-3, #828282);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  padding: 12px 0 12px 20px;
+}
+textarea {
+  background-color: #fafafa;
+  resize: none;
+  border: 1px solid var(--Gray-5, #e0e0e0);
+  outline: none;
+  width: 100%;
+}
+textarea::placeholder {
+  padding: 12px 0 0 20px;
+}
+select {
+  border: 1px solid var(--Gray-5, #e0e0e0);
+  background-color: #fafafa;
+  display: block;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+}
+select option {
+  color: var(--black, #000);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 0 60px;
+}
+.button1 button {
+  color: var(--light-text-color, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  background: var(--primary-color, #ffa62b);
+  border: none;
+}
+.button1 {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+/* ///////////////////////// */
+
+/* FOOTER  //////////////////////////////////*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: var(--secondary-color-2, #16697a);
+  padding: 50px 0 87px;
+}
+.svg-p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.par {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+.par1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 20px;
+}
+.footer-items h4 {
+  color: var(--light-text-color, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+.footer-items p {
+  color: var(--light-text-color, #fff);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.end {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  align-items: center;
+}
+.end-svg {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-right: 30px;
+}
+.end-p p {
+  color: var(--second-text-color, #737373);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+button {
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 80px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  fill: black;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  fill: white;
+}
+/* /////////////////// */
+
+/* RESPONSIVE /////////////////////*/
+@media (max-width: 480px) {
+    .header h3 {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: var(--text-color, #252b42);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    display: flex;
+    flex-direction: start;
+  } 
+  .header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+  }
+  .pages {
+    display: flex;
+    flex-direction: column;
+  }
+  .pages a {
+    color: var(--second-text-color, #737373);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+  }
+  .contact-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .advice-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .svg {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main-content {
+    flex-wrap: wrap;
+  }
+  .hero h1 {
+    color: var(--text-color, #252b42);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    width: 400px;
+    text-align: center;
+  } 
+  .footer {
+  flex-direction: column;
+  align-items: start;
+  padding-left: 80px;
+  gap: 30px;
+}
+.end-p p {
+  width: 240px;
+  display: block;
+} 
+.end-svg {
+  flex-direction: column;
+}
+.end {
+  flex-direction: column;
+  gap: 50px;
+}
+.input {
+  flex-wrap: wrap;
+  text-align: center;
+  
+  gap: 20px;
+}
+.input input {
+  width: 300px;
+}
+.card h2 {
+  color: var(--text-color, #252b42);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  !important
+} */
+.cards{
+  gap: 100px;
+}
+.hero h1 {
+  padding-top: 104px;
+  color: var(--text-color, #252b42);
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  letter-s
+}
+}
